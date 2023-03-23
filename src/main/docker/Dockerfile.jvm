@@ -79,7 +79,7 @@ FROM registry.access.redhat.com/ubi8/openjdk-11:1.14
 
 ENV LANGUAGE='en_US:en'
 
-CD quarkus-kafka
+WORKDIR quarkus-kafka
 
 RUN mvn clean package
 
