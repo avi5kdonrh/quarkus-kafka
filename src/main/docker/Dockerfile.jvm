@@ -81,7 +81,7 @@ ENV LANGUAGE='en_US:en'
 
 RUN ls -ltrha /deployments && ls -ltrha /dev
 
-WORKDIR quarkus-kafka
+WORKDIR /build
 
 RUN mvn clean package
 
